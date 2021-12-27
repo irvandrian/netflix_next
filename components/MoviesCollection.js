@@ -8,7 +8,7 @@ function MoviesCollection({ results, title }) {
       
    
         {results?.map((result) => (
-          <MovieThumbnail key={result.id} result={result} />
+          <MovieThumbnail key={result?.id} result={result} />
         ))}
         
 

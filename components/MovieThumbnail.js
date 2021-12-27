@@ -8,12 +8,12 @@ function MovieThumbnail({ result }) {
   return (
     <div
       className="flex min-w-[126px] min-h-[189px] md:min-w-[269px] md:min-h-[403px] rounded-lg overflow-hidden shadow-xl cursor-pointer border-[3px] border-[#f9f9f9] border-opacity-10  hover:border-opacity-80 hover:shadow-2xl transform hover:scale-105 transition duration-300"
-      onClick={() => router.push(`/movie/${result.id}`)}
+      onClick={() => router.push(`/movie/${result?.id}`)}
     >
       <Image
         src={
-          `${BASE_URL}${result.backdrop_path || result.poster_path}` ||
-          `${BASE_URL}${result.poster_path}`
+          `${BASE_URL}${result?.backdrop_path || result?.poster_path}` ||
+          `${BASE_URL}${result?.poster_path}`
         }
         alt=""
         width={330}
