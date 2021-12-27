@@ -7,7 +7,7 @@ function MoviesCollection({ results, title }) {
       <div className="flex space-x-2 overflow-y-hidden overflow-x-scroll scrollbar-hide p-2 -m-2">
       
    
-        {results.map((result) => (
+        {results?.map((result) => (
           <MovieThumbnail key={result.id} result={result} />
         ))}
         
