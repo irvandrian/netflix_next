@@ -156,7 +156,7 @@ function Movie({ result }) {
                 `${BASE_URL}${result.poster_path}`
               }
               layout="fill"
-              objectFit="cover" 
+              objectFit="cover"  alt=""
             />
             <div className="absolute inset-y-28 md:inset-y-auto md:bottom-10 inset-x-4 md:inset-x-12 space-y-6 z-50">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -173,10 +173,12 @@ function Movie({ result }) {
               > <span className="tracking-wide">
               Play Now
             </span>
-                <img
+                <Image
                   src="/images/carbon_play-outline.png"
                   alt=""
                   className="h-10 md:h-10"
+                  width={80}
+        height={80}
                 />
                
               </button>
@@ -207,16 +209,18 @@ function Movie({ result }) {
           <div className="gap-10 row-gap-8 sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3 grid bg-top bg-cover mt-0
     mr-auto ml-auto ">
    <div className="flex bg-top bg-cover ">
-    <img
-      src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" className="h-20 w-20 rounded-full object-cover mr-4  shadow"/>
+    <Image
+      src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" className="h-20 w-20 rounded-full object-cover mr-4  shadow" width={80}
+      height={80}  alt=""/>
     <div className="flex bg-top bg-cover flex-col justify-center ">
      <p className="font-bold text-lg ">Mac Xenon</p>
      <p className="text-sm mb-4  text-gray-800">Product Manager</p>
     </div>
    </div>
    <div className="flex bg-top bg-cover ">
-    <img
-      src="https://images.pexels.com/photos/1372134/pexels-photo-1372134.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" className="h-20 w-20 rounded-full object-cover mr-4  shadow"/>
+    <Image 
+      src="https://images.pexels.com/photos/1372134/pexels-photo-1372134.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" className="h-20 w-20 rounded-full object-cover mr-4  shadow" width={80}
+      height={80} alt=""/>
     <div className="flex bg-top bg-cover flex-col justify-center ">
      <p className="font-bold text-lg ">Martha Jena</p>
      <p className="text-sm mb-4  text-gray-800">Design Manager</p>
