@@ -38,7 +38,7 @@ function Movie({ result }) {
             <h4 className="text-sm md:text-lg max-w-4xl">{result.overview}</h4>
             <p className="text-xs md:text-sm">
               
-              {result.genres?.map((genre) => genre.name + " ")}{" "}
+              {result.genres.map((genre) => genre.name + " ")}{" "}
             </p>
             <button
                 className="text-[#f9f9f9]    flex items-center justify-center py-4 px-16 rounded hover:bg-[#c6c6c6]"
