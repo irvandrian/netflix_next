@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+@layer base {
+  body {
+    @apply bg-[#040714] text-[#f9f9f9] ;
+  }
+}
+
+
+@layer components {
+  .header-link {
+    @apply flex items-center space-x-2 cursor-pointer;
+  }
+
+  .span {
+    @apply relative  text-sm font-medium before:bg-[#f9f9f9] before:rounded-bl before:-bottom-1.5 before:h-0.5 before:inset-x-0 before:absolute before:transform before:origin-left before:scale-x-0 before:transition-all before:duration-200 group-hover:before:scale-x-100;
+  }
+
+  .brand {
+    @apply flex relative w-52 h-32 sm:w-64 sm:h-36 border-[3px] border-[#f9f9f9] border-opacity-10 rounded-lg cursor-pointer shadow-xl overflow-hidden  hover:border-opacity-80 hover:shadow-2xl transform hover:scale-105 transition duration-300;
+  }
+}
+
+.bg-image {
+  background-image: linear-gradient(180deg, rgba(16, 17, 18, 0.6) 0%, #0F161D 100%),url('/images/bg.png');
+}
+
+.movie-gradient {
+  background-image: linear-gradient(180deg, rgba(16, 17, 18, 0.6) 0%, #0F161D 100%);
+}
+h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 42px;
+}
+button {
+  background-color: #FF4244;
+  ;
+  font-weight: bold;
+  font-size:32px;
+  @apply p-4;
+  border-radius: 5px;
+}
