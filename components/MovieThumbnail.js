@@ -15,6 +15,7 @@ function MovieThumbnail({ result }) {
           `${BASE_URL}${result.backdrop_path || result.poster_path}` ||
           `${BASE_URL}${result.poster_path}`
         }
+        alt=""
         width={330}
         height={210}
         objectFit="cover"
