@@ -18,7 +18,7 @@ function Movie({ result }) {
         <div className="relative">
            <Head>
         <title>{result.title || result.original_name}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/netflix.png" />
       </Head>
       <Header />
       <section className="relative z-50 bg-black/30">
